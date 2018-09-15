@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import SplitterLayout from 'react-splitter-layout';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <SplitterLayout vertical percentage secondaryInitialSize={80}>
+        <div>1</div>
+        <SplitterLayout secondaryInitialSize={window.innerWidth * 2 / 3}>
+          <div>2</div>
+          <SplitterLayout secondaryInitialSize={window.innerWidth / 3}>
+            <div>3</div>
+            <div>4</div>
+          </SplitterLayout>
+        </SplitterLayout>
+      </SplitterLayout>
     );
   }
 }
