@@ -6,9 +6,9 @@ class App extends Component {
     return (
       <SplitterLayout vertical percentage secondaryInitialSize={80}>
         <div>1</div>
-        <SplitterLayout secondaryInitialSize={window.innerWidth * 2 / 3}>
+        <SplitterLayout percentage secondaryInitialSize={66}>
           <div>2</div>
-          <SplitterLayout secondaryInitialSize={window.innerWidth / 3}>
+          <SplitterLayout percentage secondaryInitialSize={50}>
             <div>3</div>
             <div>4</div>
           </SplitterLayout>
