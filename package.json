@@ -15,5 +15,6 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "deploy": "react-scripts build && gh-pages -d build"
-  }
+  },
+  "homepage": "https://solt9029.github.io/ReactSplitterLayoutTutorial"
 }
